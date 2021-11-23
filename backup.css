@@ -1,0 +1,111 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: arial;
+}
+
+label, input {
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	outline: none;
+	font-size: 13pt;
+	width: 100%;
+}
+
+form {
+	width: 330px;
+	background: lightgrey;
+	padding: 20px;
+	margin: 30px auto;
+
+}
+
+input[type="submit"]{
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+
+
+h2 {
+	text-align: center;
+}
+
+table {
+	background-color: rgba(0, 0, 0, .2);
+	margin: 30px auto;
+	overflow:hidden;
+	table-layout: fixed;
+
+}
+
+tr {
+	line-height: 30px;
+}
+
+td {
+	padding: 0px 5px;
+    table-layout: fixed;
+    width: 100px;
+    overflow:hidden;
+}
+
+a {
+	background-color: white;
+	color: black;
+	padding: 5px;
+	margin: 0px 5px;
+	text-decoration: none;
+}
+
+h4 {
+	float: left;
+
+}
+
+
+.warning {
+	width: 90%;
+	height: 50px;
+}
+
+tr#titles {
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, .6);
+	color:  white;
+}
+
+#upload {
+	width: 330px;
+	padding: 34px;
+	margin:30px auto;
+	position: absolute;
+	left : 4%;
+	top: 65%
+}
+
+#addproduct{
+	position: absolute;
+	left: 4%;
+	top: 30%;
+}
+
+#right {
+	float: left;
+    width: 35%;
+    height: 60%;
+}
+
+#left {
+	width: 35%;
+	height: 500px;
+	float: left;
+
+}
+
+#stock{
+	overflow:hidden;
+	table-layout: fixed;
+}
+

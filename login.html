@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iMarket</title>
+  <!-- Custom stlylesheet -->
+  <link rel="stylesheet" href="login.css">
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/all.css" />
+  
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <nav>
+    <h1><a href="https://localhost/my_shop/site.html"">iMarket</a></h1>
+    <div class="onglets">
+      <a href="https://localhost/my_shop/macbook.html">MacBook</a>
+      <a href="https://localhost/my_shop/imac.html">iMac</a>
+      <a href="https://localhost/my_shop/ipad.html">iPad</a>
+      <a href="https://localhost/my_shop/iphone.html">iPhone</a>
+      <div class="search_box">
+        <input class="search_txt" type="search" placeholder="Rechercher">
+        <a class="search_button"><i class="fas fa-search"></i></a>
+      </div>
+      
+      <a href="#"><i class="far fa-user"></i></a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </nav>
+      
+  <!-- Fin de la barre de navigation -->
+
+  <!-- Section principale -->
+  <section class="main">
+
+    <div class="container">
+
+      <div class="container1">
+         <h3>Veuillez vous connecter</h3>
+          <p>Merci de remplir le formulaire</p>
+          <br>
+          <form action="signin.php" method="post">
+            <p>Votre email :<br> <input type="text" name="email" id="mails"/></p>
+            <p>Votre mot de passe :<br> <input type="password" name="password" id="password"/></p>
+            <p><input type="submit" value="Soumettre" id="boutons"/></p>
+          </form>
+      </div>
+
+      <div class="container2">
+          <h3>Si vous n'etes pas enregistré, faites-le</h3>
+          <p>Merci de remplir le formulaire</p>
+          <br>
+          <form action="signup.php" method="post">
+            <p>Votre email :<br> <input type="text" name="email" id="mail"/></p>
+            <p>Votre mot de passe :<br> <input type="password" name="password" id="passwords"/></p>
+            <p><input type="submit" value="Soumettre" id="bouton"/></p>
+          </form>
+      </div>
+
+    </div>
+    
+    
+  </section>
+  <!-- Fin de la section principale -->
+  
+  <!-- Pied de page -->
+  <footer>
+    <p>Copyright &copy; 2021 iMarket. Tous droits réservés.</p>
+    <div class="social-media">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+      <p><i class="fab fa-linkedin-in"></i></p>
+    </div>
+  </footer>
+  <!-- Fin du pied de page -->
+</body>
+</html>

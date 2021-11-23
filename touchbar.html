@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="modiftof.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Recherche par categorie</h2>
+  <p>Rentrer une partie du mots clé de votre recherche ou du type d'appareil</p>
+  <input class="form-control" id="myInput" type="text" placeholder="RECHERCHER VOTRE PRODUIT...">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>Catégorie</th>
+      <th>Nom produit</th>
+      <th>Prix</th>
+      <th>Image produit</th>
+      <th>Etat</th>
+
+    </tr>
+    </thead>
+    <tbody id="mytable">
+    <tr class="iphone">
+      <td>Iphone</td>
+      <td>Iphone12 noir</td>
+      <td>685€</td>
+      <td>
+         <img class="fit-picture"
+              src="iphone12.jpeg">
+      </td>
+      <td>Correct</td>
+    </tr>
+    <tr class="ipad">
+      <td>Ipad</td>
+      <td>IpadPro blanc</td>
+      <td>582€</td>
+      <td>
+        <img class="fit-picture"
+             src="ipadpro.jpg">
+      </td>
+      <td>Neuf</td>
+    </tr>
+    <tr class="imac">
+      <td>Imac</td>
+      <td>Imac gris</td>
+      <td>1799€</td>
+      <td>
+        <img class="fit-picture"
+             src="imac2021.jpg">
+      </td>
+      <td>Bonne état</td>
+    </tr>
+        <tr class="macbook">
+          <td>Macbook</td>
+          <td>MacbookPro</td>
+        <td>1499€</td>
+          <td>
+            <img class="fit-picture"
+                 src="macbookpro.jpg">
+          </td>
+          <td>Correct</td>
+    <tr/>
+    <tr>
+      <td>Iphone</td>
+      <td>Iphonerouge</td>
+      <td>299€</td>
+      <td>
+        <img class="fit-picture"
+             src="iphone8r.jpg">
+      </td>
+      <td>bonne état</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h6>Si vous ne trouvez pas votre produit, soyait
+    patient nous avons des restocks tout les jours !!!</h6>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#mytable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

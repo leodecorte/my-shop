@@ -1,0 +1,13 @@
+.fit-picture {
+  width: 70px;
+  height: 60px;
+  background-color: transparent;
+  margin-left:auto;
+
+}
+thead{
+  background-color: aliceblue;
+}
+#mytable{
+  background-color: #eececb;
+}
